@@ -1,0 +1,21 @@
+[09-Nov-2015 06:10:53 UTC] PHP Parse error:  syntax error, unexpected '$firstname' (T_VARIABLE) in /home/ubuntu/workspace/Staging/parse.php on line 4
+[09-Nov-2015 06:11:01 UTC] PHP Parse error:  syntax error, unexpected '$firstname' (T_VARIABLE) in /home/ubuntu/workspace/Staging/parse.php on line 4
+[09-Nov-2015 06:11:08 UTC] PHP Warning:  include_once(DBtesting/DBconnect.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Staging/parse.php on line 2
+[09-Nov-2015 06:11:08 UTC] PHP Stack trace:
+[09-Nov-2015 06:11:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/Staging/parse.php:0
+[09-Nov-2015 06:11:08 UTC] PHP Warning:  include_once(): Failed opening 'DBtesting/DBconnect.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Staging/parse.php on line 2
+[09-Nov-2015 06:11:08 UTC] PHP Stack trace:
+[09-Nov-2015 06:11:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/Staging/parse.php:0
+[09-Nov-2015 06:11:30 UTC] PHP Warning:  include_once(/DBtesting/DBconnect.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Staging/parse.php on line 2
+[09-Nov-2015 06:11:30 UTC] PHP Stack trace:
+[09-Nov-2015 06:11:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/Staging/parse.php:0
+[09-Nov-2015 06:11:30 UTC] PHP Warning:  include_once(): Failed opening '/DBtesting/DBconnect.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Staging/parse.php on line 2
+[09-Nov-2015 06:11:30 UTC] PHP Stack trace:
+[09-Nov-2015 06:11:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/Staging/parse.php:0
+[09-Nov-2015 06:11:35 UTC] PHP Warning:  include_once(DBtesting/DBconnect.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Staging/parse.php on line 2
+[09-Nov-2015 06:11:35 UTC] PHP Stack trace:
+[09-Nov-2015 06:11:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/Staging/parse.php:0
+[09-Nov-2015 06:11:35 UTC] PHP Warning:  include_once(): Failed opening 'DBtesting/DBconnect.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Staging/parse.php on line 2
+[09-Nov-2015 06:11:35 UTC] PHP Stack trace:
+[09-Nov-2015 06:11:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/Staging/parse.php:0
+[10-Nov-2015 04:48:00 UTC] PHP Parse error:  syntax error, unexpected '" rooms remaining. "' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/Staging/roomCheck.php on line 8
