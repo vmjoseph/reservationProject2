@@ -19,3 +19,20 @@
 [09-Nov-2015 06:11:35 UTC] PHP Stack trace:
 [09-Nov-2015 06:11:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/Staging/parse.php:0
 [10-Nov-2015 04:48:00 UTC] PHP Parse error:  syntax error, unexpected '" rooms remaining. "' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/Staging/roomCheck.php on line 8
+[11-Nov-2015 02:45:42 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/Staging/index.php on line 72
+[11-Nov-2015 04:32:41 UTC] PHP Warning:  require_once(../DBtesting/DBconnect/php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Staging/roomCheck.php on line 3
+[11-Nov-2015 04:32:41 UTC] PHP Stack trace:
+[11-Nov-2015 04:32:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/Staging/roomCheck.php:0
+[11-Nov-2015 04:32:41 UTC] PHP Fatal error:  require_once(): Failed opening required '../DBtesting/DBconnect/php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Staging/roomCheck.php on line 3
+[11-Nov-2015 04:32:41 UTC] PHP Stack trace:
+[11-Nov-2015 04:32:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/Staging/roomCheck.php:0
+[11-Nov-2015 04:35:27 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/Staging/roomCheck.php on line 11
+[11-Nov-2015 05:00:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/Production/parse.php on line 166
+[11-Nov-2015 05:08:23 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/Production/parse.php on line 156
+[11-Nov-2015 05:15:22 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/Production/roomCheck.php on line 33
+[11-Nov-2015 05:15:27 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/Production/roomCheck.php on line 33
+[11-Nov-2015 05:26:46 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/Production/roomCheck.php on line 3
+[11-Nov-2015 05:37:59 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/Production/submit.php on line 4
+[11-Nov-2015 05:58:01 UTC] PHP Parse error:  syntax error, unexpected ''>Return</button>";' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/Production/roomCheck.php on line 9
+[11-Nov-2015 06:10:00 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/ubuntu/workspace/Production/roomCheck.php on line 36
+[11-Nov-2015 06:32:02 UTC] PHP Parse error:  syntax error, unexpected '$seniorJunior' (T_VARIABLE) in /home/ubuntu/workspace/Production/submit.php on line 13

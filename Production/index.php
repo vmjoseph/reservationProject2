@@ -1,13 +1,14 @@
 <html>
+
 <body>
-	<form action="roomCheck.php" method="POST">
+	<form action="parse.php" method="POST">
 		<table>
 			<tr><th colspan="2"> General Information: </th></tr>
-			<tr><td> First Name: </td><td><input type="text" name="firstname"></td></tr>
-			<tr><td> Last Name: </td><td><input type="text" name="lastname"></td></tr>
-			<tr><td> CWID: </td><td><input type="number" min="1"  name="cwid"/></td></tr>
+			<tr><td> First Name: </td><td><input type="text" required="required" name="firstname"></td></tr>
+			<tr><td> Last Name: </td><td><input type="text" required="required" name="lastname"></td></tr>
+			<tr><td> CWID: </td><td><input type="number" required="required" name="cwid"></td></tr>
 			<tr><td> Year </td><td>
-							<select name= "year">
+							<select name= "year" required="required">
 								<option value= "">Select a Year</option>
 								<option value="freshman">Freshman</option>
 								<option value="sophomore">Sophomore</option>
@@ -16,21 +17,20 @@
 							</select>
 							</td></tr>
 			<tr><td>Gender</td><td>
-					<select name="gender" id="gender">
+					<select required="required" name="gender" id="gender">
 					<option value="">Select a Gender</option>
-					<option value="transgender">Transgender</option>
 					<option value="female">Female</option>
-					<option value="other">Other</option>
 					<option value="male">Male</option>
 					</select>
 				</td></tr>
+			<tr><td>Email:</td><td><input type="email" required="required" name="email"></td></tr>
 			<tr><th colspan="2">Preferences:</th></tr>
 			<tr><td> Laundry?: </td><td><input type="checkbox" name="laundry"></td></tr>
 			<tr><td> Special Services?: </td><td><input type="checkbox" name="sservices"></td></tr>
 			<tr><td> Kitchen?: </td><td><input type="checkbox" name="kitchen"></td></tr>
 			<tr><th colspan="2">Residence Selection</th></tr>
 			<tr><td>Where would you like to live?:</td><td>
-															<select name="residence" id="residence">
+															<select name="residence" required="required">
 																<option value="">Select a residence</option>
 																<option value="champagnat">Champagnat Hall</option>
 																<option value="leo">Leo Hall</option>
@@ -48,17 +48,12 @@
 																<option value="talmadge">Talmadge Court</option>
 																<option value="offcampus">Off Campus</option>
 															</td></tr>
-															<?php
-															echo "<input type='hidden' name='remainingSlots' value='$roomsLeft'>";
-															?>
-			<tr><td>Email</td><td><input type="email" required="required" name="email"></td></tr>
 			<tr><th colspan="2"><input type="submit" value="Submit"></th></tr>
 </body>
 </html>
-
 <?php
-include_once("../DBtesting/DBconnect.php");
-	
+require_once("connect.php");
+
 $sql="SELECT * FROM residence_halls";
 
 $result = $conn->query($sql);
@@ -91,21 +86,30 @@ if ($result->num_rows > 0) {
     $gartlandLeft=$row["gartland"];
     $uppernLeft=$row["uppernew"];
     $lowernLeft=$row["lowernew"];
-    $newfLeft=$row["newfult"];
+    $newfLeft=$row["newfulton"];
     $lowerwLeft=$row["lowerwest"];
     $upperwLeft=$row["upperwest"];
     $fultonLeft=$row["fulton"];
     $talmadgeLeft=$row["talmadge"];
     
+    echo "<table>
+    <input type='hidden' name='champagnat' value=$champLeft>
+    <input type='hidden' name='leo' value=$leoLeft>
+    <input type='hidden' name='marian' value=$marianLeft>
+    <input type='hidden' name='sheahan' value=$sheahanLeft>
+    <input type='hidden' name='midrise' value=$midriseLeft>
+    <input type='hidden' name='foy' value=$foyLeft>
+    <input type='hidden' name='gartland' value=$gartlandLeft>
+    <input type='hidden' name='uppernew' value=$uppernLeft>
+    <input type='hidden' name='lowernew' value=$lowernLeft>
+    <input type='hidden' name='newfulton' value=$newfLeft>
+    <input type='hidden' name='lowerwest' value=$lowerwLeft>
+    <input type='hidden' name='upperwest' value=$upperwLeft>
+    <input type='hidden' name='fulton' value=$fultonLeft>
+    <input type='hidden' name='talmadge' value=$talmadgeLeft>
+    </table>";
     }
 } else {
     echo "0 results";
 }
-#checks to see if residence halls are empty 
- if($champLeft==5){
- 	
- }else{
- 	
- }
-
 ?>
