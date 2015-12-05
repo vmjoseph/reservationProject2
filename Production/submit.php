@@ -20,6 +20,7 @@ $sservicesChoice=$_POST["sservices"];
 $roomsRemaining=$_POST["roomsRemaining"];
 $subtractRoom=$_POST["subtractRoom"];
 $confCode = substr(md5(uniqid(rand(), true)), 16, 16);
+#displays final submission
 echo "<table>
         <tr><td>Name: </td><td>$firstname $lastname</td</tr>
         <tr><td>Year: </td><td>".ucfirst($year)."</td</tr>
@@ -32,6 +33,8 @@ echo "<table>
         <tr><td></td><td>  Special Services: </td><td>$sservicesChoice</td></tr>
         </table>";
         
+
+#logs user input into the residence area table        
 $sql =  "INSERT INTO residence_areas (first_name, last_name, year, gender, cwid, hall, special_services, kitchen, laundry, email,confirm_code)
  VALUES ('$firstname', '$lastname', '$year', '$gender', '$cwid' , '$residence' , '$sservicesChoice' , '$kitchenChoice' , '$laundryChoice' , '$email', '$confCode' )";
 

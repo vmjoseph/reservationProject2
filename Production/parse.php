@@ -78,12 +78,13 @@ $gender=$_POST["gender"];
 	}	
 	echo "Your residence choice was $residence<br>";
 	
+	#does not record off-campus choices on the residence hall table
 	if ($residence == "offcampus"){
 			echo "First Name: $firstname <br> Last Name: $lastname <br> Gender: $gender <br> Year: $year <br>
 		CWID: $cwid <br> Email: $email <br>";
 		echo "Please verify the information above. If there is an error, please go back.<br>";
 		
-	
+		#pass on the variables to different pages
 	    echo "<button onclick='window.history.back();'>Go Back</button>";
 		echo "<form action='submit.php' method='POST'>
 		 <form action='roomCheck.php' method='post'>
@@ -178,6 +179,8 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
+
+		#pass on the variables to different pages
 	    echo "Your gender is $gender<br>";
 	    echo "Please verify the information above. If there is an error, please go back.<br>";
 	    echo "<button onclick='window.history.back();'>Go Back</button>

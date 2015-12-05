@@ -19,10 +19,12 @@ $sservicesChoice=$_POST["sservices"];
 $roomsRemaining=$_POST["roomsRemaining"];
 $subtractRoom=$roomsRemaining-1;
 
+#checks room availability from the residence hall table
 if ($subtractRoom==-1){
     echo "Sorry, there are no more rooms remaining in $residence<br>
     Please return and choose a new room <a href='index.php'>Return</a>";
 }else{
+	#displays number of remaining rooms for the chosen residence hall
 echo "Rooms remaining in $residence is $roomsRemaining <br>";
 	   // echo "<script>alert('Your submission has a few errors, please return to the form');</script>";
 	    

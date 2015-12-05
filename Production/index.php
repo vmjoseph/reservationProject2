@@ -51,6 +51,7 @@
 			<tr><th colspan="2"><input type="submit" value="Submit"></th></tr>
 </body>
 </html>
+
 <?php
 require_once("connect.php");
 
@@ -92,6 +93,7 @@ if ($result->num_rows > 0) {
     $fultonLeft=$row["fulton"];
     $talmadgeLeft=$row["talmadge"];
     
+    #pass on the variables to different pages
     echo "<table>
     <input type='hidden' name='champagnat' value=$champLeft>
     <input type='hidden' name='leo' value=$leoLeft>

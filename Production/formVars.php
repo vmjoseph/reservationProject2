@@ -17,8 +17,9 @@ $kitchenChoice=$_POST["kitchen"];
 $sservicesChoice=$_POST["sservices"];
 $roomsRemaining=$_POST["roomsRemaining"];
 $subtractRooms=$_POST["subtractRooms"];
-
 $gender=$_POST["gender"];
+
+#pass on the variables to different pages
 echo"
  <input type='hidden' name='firstname' value=$firstname></input>
 	    <input type='hidden' name='lastname' value=$lastname></input>
